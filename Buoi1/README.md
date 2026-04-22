@@ -1,2 +1,2 @@
 "# WEB_BASIC" 
-Wanna get the flag?? hehehe
+Đây là buổi 1 tại S-Group
