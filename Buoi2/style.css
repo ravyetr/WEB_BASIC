@@ -1,8 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: 24px;
+
+}
+
 .headerofJ{
     height: 80px;
-    width: 1500px;
-    /* background-color: aqua; */
-    margin-left: 20px;
     margin-top: 50px;
 }
 .thename{
@@ -13,7 +22,6 @@
     display: inline-block;
     border-radius: 5px;
     background-color: black;
-    font-family: sans-serif;
     height: 40px;
     width: 40px;
     color: white;
@@ -25,16 +33,14 @@
 }
 
 .jason{
-    font-family: sans-serif;
+
     height: 40px;
     
 }
 
 .icon{
     display: inline-block;
-    margin-left: 1220px;
-   
-     
+    margin-left: 79.6%;
 }
 .fa-brands{
     display: inline-block;
@@ -44,9 +50,7 @@
    
 }
 
-.theintro{
-    margin-left: 20px;
-}
+
 
 .hithere{
    font-weight: 550;
@@ -70,14 +74,10 @@
 
 }
 
-.tab{
-    /* background-color: aquamarine; */
-}
+ 
 
 .intro{
     width: 700px;
-    font-family: sans-serif;
-    /* background-color: rgb(220, 144, 144); */
 }
 
 .num{
@@ -95,8 +95,6 @@
 
 .aboutme{
     margin-top: 40px;
-    margin-left: 20px;
-    font-family: sans-serif;
 }
 
 .ab{
@@ -125,7 +123,6 @@
      padding-right: 20px;
      width: 240px;
      height: 45px;
-     font-family: sans-serif;
      text-align: center;
      align-content: center;
      border-radius: 30px;
