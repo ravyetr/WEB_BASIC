@@ -1,18 +1,16 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 10px;
     font-family: "Montserrat", sans-serif;
 }
-.container{
-    max-width: 1280px;
-    width: 100%;
-    margin-inline: 24px;
 
-}
 
 .headerofJ{
     height: 80px;
     margin-top: 50px;
+   
+    display: flex;
+    justify-content: space-between;
 }
 .thename{
     text-align: center;
@@ -35,19 +33,21 @@
 .jason{
 
     height: 40px;
-    
 }
 
 .icon{
     display: inline-block;
-    margin-left: 79.6%;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .fa-brands{
     display: inline-block;
     width: 24px;
     height: 24px;
     color: #F26464;
-   
+    margin-right: 2px;
 }
 
 
@@ -71,10 +71,13 @@
    
     margin-left:70px;
     margin-bottom: 150px;
-
+    display: flex;
 }
 
- 
+.theintro{
+    display: flex;
+    
+} 
 
 .intro{
     width: 700px;
@@ -150,18 +153,17 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: space-around;
     margin-top: 30px;
     margin-bottom: 140px;
 }
 
 .coreskill{
-    width: 49%;
+    width: 50%;
 }
 
 .otherskill{
-    width: 49%;
+    width: 50%;
+    
 }
 
 .sk{
@@ -191,7 +193,8 @@
     margin-top: 22px;
 }
 .com{
-    margin: 10px 0;
+    margin-top: 10px ;
+    margin-bottom: 10px;
     font-size: 30px;
 }
 .pos{
