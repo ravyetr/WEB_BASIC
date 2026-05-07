@@ -145,6 +145,7 @@
     font-size: 22px;
     margin-bottom: 20px;
 }
+
 .bothskill{
     width: 100%;
     display: flex;
@@ -173,7 +174,6 @@
      padding-left: 20px;
      padding-right: 20px;
      margin: 4px;
-     
 }
 .workex{
     width: 100%;
@@ -193,7 +193,6 @@
 .com{
     margin: 10px 0;
     font-size: 30px;
-   
 }
 .pos{
     font-weight: 550;
@@ -201,5 +200,4 @@
 }
 .listlorem{
     width: 99%;
-    
 }
