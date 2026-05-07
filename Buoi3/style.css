@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: 24px;
+
+}
+
+.headerofJ{
+    height: 80px;
+    margin-top: 50px;
+}
+.thename{
+    text-align: center;
+}
+
+.J{
+    display: inline-block;
+    border-radius: 5px;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    color: white;
+    padding: auto;
+    margin-right: 8px;
+    align-content: center;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.jason{
+
+    height: 40px;
+    
+}
+
+.icon{
+    display: inline-block;
+    margin-left: 79.6%;
+}
+.fa-brands{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: #F26464;
+   
+}
+
+
+
+.hithere{
+   font-weight: 550;
+    margin-bottom: 50px;
+    margin-left:70px;
+
+}
+
+.iam{
+   
+    margin-left:70px;
+    font-size: 48px;
+    margin-bottom: 70px;
+    font-weight: 550;
+}
+
+.exp{
+   
+    margin-left:70px;
+    margin-bottom: 150px;
+
+}
+
+ 
+
+.intro{
+    width: 700px;
+}
+
+.num{
+    font-size: 36px;
+    color: #F26464;
+    font-weight: 550;
+}
+.proj{
+    font-size: 16px;
+}
+
+.col{
+    width: 135px;
+}
+
+.aboutme{
+    margin-top: 40px;
+}
+
+.ab{
+    font-weight: 550;
+    text-decoration: underline #F26464 2px;
+    text-underline-offset: 8px;
+    font-size: 22px;
+}
+
+.lorem{
+    margin-top: 26px;
+    font-size: 24px;
+    margin-bottom: 45px;
+}
+
+.fabut{
+    align-content: center;
+   
+    text-align: center;
+}
+.downbut{
+     color: #F26464;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+     width: 240px;
+     height: 45px;
+     text-align: center;
+     align-content: center;
+     border-radius: 30px;
+     border-style: solid;
+     border-width: 2px;
+     font-size: 12px;
+     font-weight: 550;
+}
+.skun1{
+    width: 100%;
+    display: flex;
+    margin-top: 140px;
+    justify-content: space-between;
+} 
+.under{
+    width: 49%;
+    font-weight: 550;
+    text-decoration: underline #F26464 2px;
+    text-underline-offset: 8px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.bothskill{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 140px;
+}
+
+.coreskill{
+    width: 49%;
+}
+
+.otherskill{
+    width: 49%;
+}
+
+.sk{
+     display: inline-block;
+     border-radius: 30px;
+     border: solid rgb(181, 181, 181) ;
+     border-width: 2px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+     margin: 4px;
+     
+}
+.workex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.woex{
+    width: 49%;
+}
+
+.year{
+    font-size: 14px;
+    font-weight: 550;
+    margin-top: 22px;
+}
+.com{
+    margin: 10px 0;
+    font-size: 30px;
+   
+}
+.pos{
+    font-weight: 550;
+    margin-bottom: 22px;
+}
+.listlorem{
+    width: 99%;
+    
+}

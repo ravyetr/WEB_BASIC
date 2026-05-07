@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css selector */
+        .box{
+            background-color: #28004c;
+            width: 200px;
+            height: 200px;
+            /* display: none; */
+            /*visibility: hidden */
+            /* opacity: 1; */
+            margin: 10px;
+            border: solid black;
+        }
+        .image{
+            width: 100%;
+            height: 100%;
+        }
+        .fill{
+            /* zoom bất chấp tỉ lệ để lấp ảnh  */
+            object-fit: fill;
+        }
+         .contain{
+            
+            object-fit: contain;
+        }
+        .cover{
+            /* giữ tỉ lệ ảnh, zoom hợp lí
+            cơ chế: zoom tới khi nào phần tỉ lệ nhỏ nhất lấp box, còn lại phần tràn thì cắt bỏ */
+            object-fit: cover;
+        }
+       
+
+
+       
+        h1#id1{
+            color: rgb(126, 0, 38);
+        }
+        .parent p{
+            color: rgb(9, 168, 149)
+        }
+        .parent > p{
+            /* chỉ lấy thẻ con trực tiếp */
+            color: rgb(136, 9, 168)
+        }
+        .parent + p{
+            /* chỉ 1 lấy thẻ con liền kề cùng cấp */
+            color: red;
+        }
+        .parent ~ p{
+            /* lấy tất cả thẻ liền kề cùng cấp */
+            color: rgb(30, 230, 23);
+        }
+        /* box-sizing */
+        .box1{
+            /* content box  */
+            /* kich thuoc that= width/height + 2. padding + 2.border   */
+            width: 250px;
+            padding: 40px;
+            border: 5px solid black;
+            margin: 10px; 
+            box-sizing: content-box;
+            background-color: rgb(201, 74, 31);
+            box-shadow: 0 10px 20px; /* check lại đổ theo trục nào*/
+        }
+        .box2{
+            /* border box  */
+
+            /* kich thuoc that : kich thuoc content */
+            /* width=kich thuoc that + 2.padding + 2. border */
+            /* => kich thuoc that = 150px */
+            width: 250px;
+            padding: 40px;
+            border: solid black 5px;
+            margin: 10px; 
+            box-sizing: border-boxs;
+            background-color: blueviolet;
+            background-image: url("https://i.pinimg.com/1200x/eb/9c/a3/eb9ca3b59c58c7ee161bfa2b8d7b367a.jpg");
+            background-position: left top;
+            background-repeat: none;
+        
+         
+        }
+        .flexcontainer{
+            display: flex;
+            /* justify-content: space-around */
+            /* align-item: end */
+            width: 100%;
+            height: 600px;
+            background-color: antiquewhite;
+            justify-content:space-around; /*start, end, center, space-between */
+            /* space-round thì khoảng lề hai đầu bằng 1 nửa khoảng lề ở giữa */
+        }
+        
+        .item{
+            width: 100px;
+            height: 200px;
+            background-color: rgb(171, 221, 222);
+            margin: 10px;
+        }
+        .i1{
+            
+            background-color: rgb(202, 113, 113);
+        }
+        .i2{
+            background-color: rgb(108, 175, 137);
+        }
+        .i3{
+            background-color: rgb(152, 120, 181);
+        }
+        .i4{
+            background-color: rgb(225, 225, 177);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <img class="image fill"  src=" https://i.pinimg.com/736x/72/ac/6b/72ac6baaf1d60fa2efe54226bcd5509d.jpg" alt="">
+    </div>
+     <div class="box">
+        <img class="image contain"  src="https://i.pinimg.com/736x/72/ac/6b/72ac6baaf1d60fa2efe54226bcd5509d.jpg" alt="">
+    </div>
+     <div class="box">
+        <img class="image cover"  src="https://i.pinimg.com/736x/72/ac/6b/72ac6baaf1d60fa2efe54226bcd5509d.jpg" alt="">
+    </div>
+    <p>Hello, world!</p>
+    <h1> Heading 1</h1>
+    <h1 id="id1"> Heading 2</h1>
+    <div  class="parent">
+        <p>This is a ....</p>
+        <div>
+             <p>hehehehe</p>
+        </div>
+       
+    </div>
+    <p>
+        afterrrrrrrrrrrrrrr
+    </p>
+    <p>
+        afterrrr afterrrrrrrrrrrrrrr
+    </p>
+    <div class="box1">
+        hehehehe
+    </div>
+    <div class="box2">
+        hahahaha
+    </div>
+    <div class="flexcontainer">
+         
+        <div class="item i1">item 1</div>
+        <div class="item i2">item 2</div>
+        <div class="item i3">item 3</div>
+        <div class="item i4">item 4</div>
+        
+    </div>
+</body>
+</html>
