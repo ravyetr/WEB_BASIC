@@ -12,7 +12,7 @@
             height: 200px;
             /* display: none; */
             /*visibility: hidden */
-            /* opacity: 1; */
+            /* opacity: 1; -- làm mờ đi*/
             margin: 10px;
             border: solid black;
         }
@@ -40,8 +40,13 @@
         h1#id1{
             color: rgb(126, 0, 38);
         }
-        .parent p{
+        .parent .child{
+            /* lấy tất cả thẻ p con trong parent */
             color: rgb(9, 168, 149)
+        }
+        .parent.child{
+            /* chỉ lấy một thẻ .child con trong .parent */
+            color: #28004c;
         }
         .parent > p{
             /* chỉ lấy thẻ con trực tiếp */
@@ -65,7 +70,7 @@
             margin: 10px; 
             box-sizing: content-box;
             background-color: rgb(201, 74, 31);
-            box-shadow: 0 10px 20px; /* check lại đổ theo trục nào*/
+            box-shadow: 0 50px 20px; /* check lại đổ theo trục nào*/
         }
         .box2{
             /* border box  */
@@ -132,7 +137,7 @@
     <h1> Heading 1</h1>
     <h1 id="id1"> Heading 2</h1>
     <div  class="parent">
-        <p>This is a ....</p>
+        <p class="child">This is a ....</p>
         <div>
              <p>hehehehe</p>
         </div>
