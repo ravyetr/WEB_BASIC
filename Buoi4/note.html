@@ -75,7 +75,27 @@
         background-color: blue;
        }
 
-
+        /* lam anh di chuyen */
+        .box{
+            width: 500px;
+            height: 350px;
+            border: solid 3px black;
+            position: relative;
+            overflow: hidden;
+            
+           
+        }
+        .box img{
+                position: absolute;
+                width: calc(100% + 40px);
+                object-fit: cover;
+                height: 100%;
+                transform: translateX(-40px);
+                transition: 2s;
+            }
+        .box:hover img{
+            transform: translateX(0px);
+        }
     </style>
 </head>
 <body>
@@ -97,5 +117,9 @@
     </div>
    <!-- animation -->
     <div class="button">Click</div>
+
+    <div class="box">
+        <img src="https://i.pinimg.com/1200x/eb/9c/a3/eb9ca3b59c58c7ee161bfa2b8d7b367a.jpg" alt="">
+    </div>
 </body>
 </html>
