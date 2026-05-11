@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            margin: 10px;
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+        .static{
+            /* cố định */
+            position: static;
+        }
+        .relative{
+            position: relative ; 
+            /* thay doi vi tri hinh anh nhưng không thay đổi vị trí trên html */
+            top: 20px;
+            left: 20px;
+        }
+        .absolute{
+            /* di chuyển phần tử ra khỏi flow của html */
+            /* ăn theo box cha gần nhất có relative */
+            /* khi muốn cố định ở trong một khối nào đó */
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+       .fixed{
+         /* Dùng khi muốn cố định, ảnh hưởng toàn trang web, ăn theo toàn trang, ứng dụng taskbar của facebook */
+            position: fixed;
+            top: 20px;
+            left: 20px;
+       }
+       /*  animation */
+       .button{
+        width: 100px;
+        height: 50px;
+        border: solid 2px red;
+
+        /* phân bố thời gian */
+        transition: background-color 1.5s;
+        
+        transition: 3s linear; /* tốc độ đều*/
+        /* ease-in: nhanh dần
+            ease-out: chậm dần
+            ease: chậm-nhanh- chậm
+        */
+       }
+       .button:hover{
+        /* khi rê chuột vào */
+        background-color: blanchedalmond;
+        /* phóng to */
+        transform: scale(1.5);
+         /*  di chuyển theo chiều ngang*/
+        transform: translateX(100px);
+        /* xoay */
+        transform: rotate(90deg);
+         
+       }
+       .button:focus{
+        /* click */
+        background-color: red;
+       }
+       .button:active{
+        /* khi nhấn giữ chuột */
+        background-color: blue;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="box1 absolute">
+
+         </div>
+        <div class="box2">
+
+        </div>
+    </div>
+    <div class="container">
+         <div class="box1 absolute ">
+
+         </div>
+        <div class="box2">
+
+        </div>
+    </div>
+   <!-- animation -->
+    <div class="button">Click</div>
+</body>
+</html>

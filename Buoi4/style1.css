@@ -1,0 +1,124 @@
+*{
+    font-family: Raleway, Arial, sans-serif;
+    color: #fff;
+}
+
+body{
+    background-color: #2F3238;
+}
+
+a{
+    text-decoration: none;
+}
+
+.set{
+    display: flex;
+    font-weight: 550;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.set1{
+    width: 90px;
+    height: 51px;
+    background-color: #3C414A;
+    align-content: center;
+    margin: 7px;
+}
+
+.set2 a{
+    color: rgb(52, 152, 219);
+}
+.set2{
+    width: 90px;
+    height: 51px;
+    
+    align-content: center;
+    margin: 7px;
+}
+
+.set2:hover{
+     background-color: #3C414A;
+}
+
+.Mar{
+    color: rgb(72, 75, 84);
+    display: inline-block;
+    width: 480px;
+   
+}
+
+.marley{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mar{
+    width: 480px;
+    height: 360px;
+    margin: 7px;
+    position: relative;
+    text-align: right;
+}
+
+
+.contentmar{
+    display: flex;
+    justify-content: center;
+}
+
+.sweet{
+    font-weight: ;
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    font-size: 30px;
+}
+
+.line{
+    width: 420px;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+    right: 30px;
+    justify-self: center;
+}
+
+.mate{
+    position: absolute;
+    bottom: -25px;
+    right: 30px;
+    font-weight: 100;
+    font-size: 14px;
+}
+.ml{
+    font-weight: 550;
+}
+
+.phu{
+   width: 480px;
+   height: 360px;
+   background-color: rgb(52, 152, 219, 0.15);
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+
+.mar .sweet, .mar .line, .mar .mate{
+    transition: 0.3s;
+}
+.mar:hover .sweet{
+    transform: translateY(-20px);
+}
+.mar .line, .mar .mate{
+    opacity: 0;
+}
+.mar:hover .line, .mar:hover .mate{
+    opacity: 1;
+    transform: translateY(-55px);
+}
+

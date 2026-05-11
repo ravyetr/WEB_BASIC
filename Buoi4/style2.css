@@ -1,0 +1,181 @@
+*{
+    font-family: Raleway, Arial, sans-serif;
+    color: #fff;
+}
+
+body{
+    background-color: #2F3238;
+}
+
+a{
+    text-decoration: none;
+}
+
+.set1 a{
+     color: rgb(52, 152, 219); 
+}
+.set{
+    display: flex;
+    font-weight: 550;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.set1{
+    width: 90px;
+    height: 51px;
+    color: rgb(52, 152, 219); 
+    align-content: center;
+    margin: 7px;
+}
+
+.set2{
+    width: 90px;
+    height: 51px;
+    background-color: #3C414A;
+    align-content: center;
+    margin: 7px;
+}
+
+
+.set1:hover{
+     background-color: #3C414A;
+}
+
+.Her{
+    color: rgb(72, 75, 84);
+    display: inline-block;
+    width: 480px;
+   
+}
+
+.hera{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.her{
+    width: 480px;
+    height: 360px;
+    margin: 7px;
+    position: relative;
+    text-align: right;
+}
+
+ .contentmar{
+    display: flex;
+    justify-content: center;
+}
+
+
+.phu{
+   width: 480px;
+   height: 360px;
+   background-color: rgba(77, 51, 197, 0.15);
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+
+.tender{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    font-size: 35px;
+    font-size: 30px;
+}
+
+.herabold{
+    font-weight: 600;
+}
+
+.icon4{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: space-between;
+    
+    position: absolute;
+    top: 25%;
+    left: 150px;
+   
+}
+
+
+.fa{
+    font-size: 25px;
+    width: 50%;
+    display: flex;
+    opacity: 0;
+}
+.i1{
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+.i2{
+    position: absolute;
+    left: 150px;
+    top: 0px;
+}
+.i3{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.i4{
+    position: absolute;
+    bottom: 0px;
+    left: 150px;
+}
+.line{
+    width: 245px;
+    height: 245px;
+    border: solid 2px #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 55px;
+    left: 110px;
+    scale: 50%;
+    opacity: 0;
+}
+
+.her .tender, .her .fa, .her .line{
+    transition: 0.3s;
+}
+
+.her:hover .line{
+    opacity: 1;
+   transform: rotate(45deg) scale(1.5);
+}
+
+.her:hover .tender{
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.her:hover .i1{
+    opacity: 1;
+    transform: translate(55px, 50px); 
+}
+.her:hover .i2{
+    opacity: 1;
+    transform: translate(-55px, 50px); 
+}
+.her:hover .i3{
+     opacity: 1;
+     transform: translate(55px, -50px); 
+}
+.her:hover .i4{
+     opacity: 1;
+     transform: translate(-55px, -50px);  
+}
