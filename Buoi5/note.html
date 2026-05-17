@@ -10,6 +10,7 @@
             position: relative;
             color: black;
         }
+        /* after phần tử giả, không có kích thước nên content : "AAAAAA" không ăn theo */
         a::after{
             content: "";
             position: absolute;
@@ -28,7 +29,7 @@
             padding: 20px;
             border: 4px solid;
             background-color: aquamarine;
-            /* check laij */
+            /* z-index số càng lớn thì sẽ nằm đè lên càng trên trong cái position: absolute;*/
             z-index: 1;
             overflow: hidden;
         }
