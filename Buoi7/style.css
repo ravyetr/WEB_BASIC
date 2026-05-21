@@ -54,7 +54,7 @@
 }
 
 .fa{
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,6 +70,7 @@
     background-color: #F26464;
     color: white;
     border-radius: 50%;
+    line-height: 1;
 }
 .fa-brands:hover{
     background-color: black;
