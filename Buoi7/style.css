@@ -94,10 +94,10 @@
 }
 
 .exp{
-   
     margin-left:70px;
     margin-bottom: 150px;
     display: flex;
+    flex-wrap: nowrap;
 }
  
 .tieusu{
@@ -226,6 +226,7 @@ img{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    
 }
 .woex{
     width: 49%;
@@ -326,9 +327,17 @@ img{
     .iam{
         font-size: 30px;
     }
-    .col{
+    .intro{
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .exp{
         width: auto;
     }
+    .col{
+        width: 100px;
+    }
+    
     .hithere, .iam, .exp{
         margin-left: 10px;
     }
