@@ -52,12 +52,21 @@
 .icon{
     display: flex;
 }
-.fa-brands{
+
+.fa{
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 24px;
-    min-height: 24px;
+    width: auto;
+    height: auto;
+}
+.fa-brands{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F26464;
     color: white;
     border-radius: 50%;
