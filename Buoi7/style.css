@@ -49,31 +49,27 @@
 }
 
  
+
 .icon{
     display: flex;
-}
-
-.fa{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
+    flex-wrap: nowrap;
+    
+    position: relative;
+    top: 20px;
 }
 .fa-brands{
+    
+    display: inline-block;
     width: 24px;
     height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F26464;
-    color: white;
-    border-radius: 50%;
-    line-height: 1;
+   
+    color: #F26464;
+    margin: 0;
+  
+    
 }
 .fa-brands:hover{
-    background-color: black;
+    color: black;
 }
 .fa{
     align-items: center;
