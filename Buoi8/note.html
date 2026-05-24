@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inline
+    <button onclick="alert('hi')">
+        click me
+    </button> -->
+    <!-- internal -->
+    <!-- <script>
+        console.log("hehheheheh")
+    </script> -->
+    <!-- external 
+        thường bỏ cuối body, vì để tải giao diện trước  
+    -->
+     <!-- <script src="./notestyle.js"> 
+
+     </script>
+
+     <div id="div1">
+     </div>
+     <input class="box1">a1aaaaa</input>
+     <div class="box1">aaaa</div>
+     <div class="box1"></div>
+     <p>hehehe</p>
+     <button></button>
+     <script> // DOM -->
+        <!-- // chỉ lấy được id
+        
+        // trỏ tới một phần tử bất kì nhưng chỉ lấy được thẻ đầu tiên
+        let title1 = document.getElementById("div1");
+        let box1 = document.querySelector(".box1");
+        let box2 = document.querySelector("p");
+        let button = document.querySelector("button");
+        let box1s = document.querySelectorAll(".box1");
+
+        button.addEventListener('click', function(){
+            alert("chào mn");
+            let a = box1.value;
+            console.log(a);
+        })
+        // thay đổi thuộc tính cho nó
+        title1.innerText="<b> hi <b>";// nhét toàn bộ text vào div1
+        title1.innerHtml = "<b> hi <b>"; // nhét toàn bộ vào
+        box1.style.color="red";
+     </script> -->
+        <input type="text" placeholder="Nhập vào đây"> Tên đăng nhập
+
+        <input type="color" >
+
+
+
+</body>
+</html>
