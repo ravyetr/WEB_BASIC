@@ -25,9 +25,22 @@ function appear(color, w, h){
     sample.style.opacity = "1";
     sample.style.width= w + "px";
     sample.style.height= h + "px";
-    sample.style.backgroundColor = "#" + color ; 
+    sample.style.backgroundColor = xulimau(color) ; 
 }
 
+function xulimau(color){
+    color=color.toLowerCase();
+    if (color[0] == "#") return color;
+    else {
+        
+        for(let i=0; i<color.length; i++){
+            if (color[i] > "f") {
+                return color;
+            }
+        }
+        return "#" + color;
+    }
+}
 function disapper(){
     sample.style.opacity="0";
     box1.value="";
