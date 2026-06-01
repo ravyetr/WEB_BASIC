@@ -1,0 +1,452 @@
+*{
+    padding: 0;
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contain{
+    width: 100%;
+}
+
+.containoftieusu{
+    width: 100%;
+}
+.theheader{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+.headerofJ{
+    width: 100%;
+    height: 80px;
+    margin-top: 50px;
+    display: flex; justify-self: center;
+    justify-content: space-between;
+}
+.thename{
+    text-align: center;
+    padding-left: 20px;
+}
+
+.J{
+    display: inline-block;
+    border-radius: 5px;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    color: white;
+    padding: auto;
+    margin-right: 8px;
+    align-content: center;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.jason{
+
+    height: 40px;
+}
+
+ 
+
+.icon{
+    display: flex;
+    flex-wrap: nowrap;
+    
+    position: relative;
+    top: 20px;
+}
+.fa-brands{
+    
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+   
+    color: #F26464;
+    margin: 0;
+  
+    
+}
+.fa-brands:hover{
+    color: black;
+}
+.fa{
+    align-items: center;
+}
+ 
+
+
+
+.hithere{
+   font-weight: 550;
+    margin-bottom: 50px;
+    margin-left:70px;
+
+}
+
+.iam{
+   
+    margin-left:70px;
+    font-size: 48px;
+    margin-bottom: 70px;
+    font-weight: 550;
+}
+
+.exp{
+    margin-left:70px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+ 
+.tieusu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.theintro{
+    display: flex;
+    
+} 
+img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.imgbox{
+    width: 42%;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.intro{
+    width: 55%;
+    height: auto;
+    padding-top: 20px;
+}
+
+
+.num{
+    font-size: 36px;
+    color: #F26464;
+    font-weight: 550;
+}
+.proj{
+    font-size: 16px;
+}
+
+.col{
+    width: 135px;
+}
+
+.aboutme{
+    margin-top: 40px;
+}
+
+.ab{
+    font-weight: 550;
+    text-decoration: underline #F26464 2px;
+    text-underline-offset: 8px;
+    font-size: 22px;
+}
+
+.lorem{
+    margin-top: 26px;
+    font-size: 24px;
+    margin-bottom: 45px;
+}
+
+.fabut{
+    align-content: center;
+   
+    text-align: center;
+}
+.downbut{
+     color: #F26464;
+    
+     padding: 17px 30px;
+     width: 240px;
+     height: 45px;
+     text-align: center;
+     align-content: center;
+     border-radius: 30px;
+     border-style: solid;
+     border-width: 2px;
+     font-size: 12px;
+     font-weight: 550;
+}
+.downbut:hover{
+    color: white;
+    background-color: #F26464;
+}
+ 
+.under{
+    
+    font-weight: 550;
+    text-decoration: underline #F26464 2px;
+    text-underline-offset: 8px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    
+}
+
+.bothskill{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 140px;
+}
+
+.coreskill{
+    width: 50%;
+}
+
+.otherskill{
+    width: 50%;
+    
+}
+
+.sk{
+     display: inline-block;
+     border-radius: 30px;
+     border: solid rgb(181, 181, 181) ;
+     border-width: 2px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+     margin: 4px;
+}
+.workex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+.woex{
+    width: 49%;
+}
+
+.year{
+    font-size: 14px;
+    font-weight: 550;
+    margin-top: 22px;
+}
+.com{
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.pos{
+    font-weight: 550;
+    margin-bottom: 22px;
+}
+.listlorem{
+    width: 99%;
+}
+/* nút add */
+.addbox{
+    width: 200px;
+    height: 30px;
+    padding-left: 5px ;
+    border-radius: 5px;
+}
+.addbut{
+    width: 40px;
+    height: 40px;
+    background-color: #F26464;
+    border-radius: 5px;
+}
+.addbut:hover{
+    background-color: #f64f4f;
+}
+
+@media(max-width: 992px){
+    .theheader{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+   .headerofJ{
+        width: 80%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 25px;
+        padding-right: 25px;
+   }
+   .contain{
+    display: flex;
+    justify-content: center;
+   }
+   .containoftieusu{
+    width: 80%;
+   }
+   .tieusu{
+    width: 100%;
+   }
+   .exp{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .col{
+    width: 100%;
+   }
+    
+     
+}
+@media(width: 768px){
+    .jason{
+        opacity: 0;
+    }
+    .iam{
+        font-size: 30px;
+    }
+    .col{
+        width: auto;
+    }
+    .hithere, .iam, .exp{
+        margin-left: 10px;
+    }
+    .intro{
+        padding-top: 0px;
+    }
+    .headerofJ{
+        padding-left: 25px;
+        padding-right: 25px;
+        position: relative;
+        top: -80px;
+    }
+    .hithere{
+        margin-bottom: 20px;
+    }
+    .iam{
+        margin-bottom: 20px;
+    }
+    .thename{
+        padding-left: 0;
+    }
+    
+   
+    
+}
+@media(max-width: 767px){
+    .jason{
+        opacity: 0;
+    }
+    .iam{
+        font-size: 30px;
+    }
+    .intro{
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .exp{
+        width: auto;
+    }
+    .col{
+        width: 100px;
+    }
+    
+    .hithere, .iam, .exp{
+        margin-left: 10px;
+    }
+    .intro{
+        padding-top: 0px;
+    }
+    .headerofJ{
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 80%;
+    }
+    .hithere{
+        margin-bottom: 20px;
+    }
+    .iam{
+        margin-bottom: 20px;
+    }
+  
+    .containoftieusu{
+     width: 80%;
+    }
+    img{
+        max-width: 100%;
+    }
+    .imgbox{
+        width: 90%;
+    }
+    
+    .headerofJ{
+        position: relative;
+        width: 80%;
+        top: -80px;
+    }
+    .theintro{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .aboutme{
+         margin-top: 10px;
+    }
+    .intro{
+        height: 350px;
+    }
+
+    .bothskill{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .coreskill{
+         width: 100%;
+    }
+
+    .otherskill{
+        width: 100%;
+    
+    }
+    .bothskill{
+        margin-bottom: 60px;
+    }
+    .workex{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    .woex{
+        width: 100%;
+    }
+    .thename{
+        padding-left: 15px;
+    }
+
+}
+
+@media(max-width: 576px){
+    body{
+        width: 100%;
+    }
+    .headerofJ{
+        width: 95%;
+    }
+    .containoftieusu{
+        width: 95%;
+    }
+     .headerofJ{
+        padding-left: 0px;
+        padding-right: 0px;
+         
+    }
+}
+

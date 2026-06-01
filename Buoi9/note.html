@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myButton">
+        Click me
+    </button>
+    <div>A
+        <div>sub</div>
+    </div>
+    <div>B</div>
+    <p>paragraph</p>
+    <div>C</div>
+    <script>
+        //click, input, change, mouseover(khi rê chuột vào), mouseout ( khi rê chuột ra khỏi),
+        const button= document.getElementById("myButton");
+        // lấy phần tử thứ 2 (xét về vị trí) ra rồi check có phải thẻ div hay không, nếu là div thì trả về thẻ đó còn không phải thì trả về null
+        let div2=document.querySelector('div:nth-child(2)');
+        //  kiểm tra toàn bộ thẻ xem thẻ nào là thẻ div rồi lấy thẻ div thứ 3
+        let div3=document.querySelector('div:nth-of-type(3)');
+        let divsub=document.querySelector('div div:nth-of-type(1)')
+        button.addEventListener('click', function(){
+            alert("Button was clicked!");
+        });
+       
+        div2.style.color='red';
+         console.log(div2);
+        div3.style.color='blue';
+        divsub.style.color='green';
+    </script>
+</body>
+</html>
