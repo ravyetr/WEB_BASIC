@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+       
+    </style>
+</head>
+<body>
+    <div>the 1</div>
+    <div>the 2</div>
+    <div>the 3</div>
+     
+    <script>
+        let divs = document.querySelectorAll("div");
+         
+        divs.forEach(
+            function(div){
+              
+                
+                div.addEventListener("click", function(){
+                    divs.forEach(
+                         div => {
+                            div.classList.remove("blue");
+                        }
+                    );
+                    div.classList.toggle("blue");
+                })
+            }
+        );
+
+        // div.addEventListener("click", function(){
+        //             divs.forEach(
+        //                  div => {
+        //                     div.classList.remove("blue");
+        //                 }
+        //             );
+        //             div.classList.toggle("blue");
+        // })
+    </script>
+</body>
+</html>

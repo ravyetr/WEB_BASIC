@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://kit.fontawesome.com/0e2c7382bc.js" crossorigin="anonymous"></script>
+    <style>
+         body{
+            background-color: black;
+            
+         }
+         .contain{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            padding: 0;
+         }
+        .box{
+            background-color: #161617;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            font-size: 24px;
+            position: relative;
+            top: -368px;
+            transition: 1s;
+            padding: 30px;
+            padding-top: 60px;
+            
+        }
+        .box_trans{
+            transform: translateY(350px);
+        }
+        .icon{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 5px;
+            position: relative;
+            top: -433px;
+            left: 1450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon:hover{
+            background-color: rgb(38, 38, 38);
+        }
+        .skill{
+            opacity: 0;
+            transition: 1s;
+            font-size: 30px;
+        }
+        .appear{
+            opacity: 1;
+        }
+        .fa-apple{
+            color: rgb(193, 193, 193);
+            font-size: 30px;
+        }
+        .fa-apple:hover{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="box">
+            <div class="skill">Cửa Hàng</div>
+            <div class="skill">Mac</div>
+            <div class="skill">iPad</div>
+            <div class="skill">iPhone</div>
+            <div class="skill">Watch</div>
+            <div class="skill">AirPods</div>
+            <div class="skill">TV & Nhà</div>
+            <div class="skill">Giải Trí</div>
+            <div class="skill">Phụ Kiện</div>
+            <div class="skill">Hỗ Trợ</div>
+        
+        </div>
+         
+    </div>
+    <div class="icon">
+            <i class="fa-brands fa-apple"></i>
+    </div>
+   
+    <script>
+        let icon=document.querySelector(".icon");
+        let skills= document.querySelectorAll(".skill");
+        let box = document.querySelector(".box");
+
+        icon.addEventListener("click", function(){
+            box.classList.toggle("box_trans");
+            skills.forEach(element => {
+                element.classList.toggle("appear");
+            });
+            
+        })
+    </script>
+</body>
+</html>
