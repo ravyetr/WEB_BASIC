@@ -47,16 +47,23 @@ let otherdata='<div class="under">OTHER SKILLS</div><div class="sk">Storyblok</d
 
 addbut1.addEventListener('click', function(){
     let addcore=add1.value;
-    let str = "<div class='sk'>" + addcore + "</div>" +'<div class="add"><input class="addbox add1" type="text" placeholder="nhập thêm skill"><button class="addbut addbut1">Add</button></div>';
-    coredata+=str;
+    if (addcore != ""){
+        let str = "<div class='sk'>" + addcore + "</div>" ;
+        coredata+=str;
+    }
     coreskill.innerHTML=coredata;
+    add1.value="";
 });
 
 addbut2.addEventListener('click', function(){
     let addother=add2.value;
-    let str = "<div class='sk'>" + addother + "</div>" + "<div class='add'><input class='addbox add2' type='text' placeholder='nhập thêm skill'><button class='addbut addbut2'>Add</button></div>";
-    otherdata+=str;
+    if(addother != ""){
+        let str = "<div class='sk'>" + addother + "</div>" 
+        otherdata+=str;
+    }
+    
     otherskill.innerHTML=otherdata;
+    add2.value ="";
 });
 
 
