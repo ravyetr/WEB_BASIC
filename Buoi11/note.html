@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // xử lí bất nội bộ
+        console.log(2)
+        console.log(2)
+        // chạy từ trên xuống dưới, khi gặp hàm setTimeout thì nhớ trình duyệt làm giúp phần bên trong còn js sẽ làm phần bên dưới, sau 1s thì nó lấy lại 
+        setTimeout(
+            ()=>{
+                console.log("3")
+            }, 1000
+        )
+        console.log(4)
+
+        // lấy data về 
+        data = fetch("https://jsonplaceholder.typic")
+        console.log(data) // trả về 3 trạng thái ( pending, fulfilled, rejected)
+        const promise = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                resolve("")
+            },1000)
+        })
+
+        promise
+        // xử lí thành công thì chạy hàm sau
+        .then((data)=>{
+            console.log(data)
+        })
+        // xử lí thất bại thì
+        .catch((error)=>{
+            console.log(error)
+        })
+
+
+        // cach khai bao 
+        login()
+        // xử lí xong hàm login nếu trả về user thì then thực hiện 
+        .then((user)=>{
+            console.log("ger user")
+        })
+        // nếu trả về post thì hàm dưới
+        .then((post)=>{
+            console.log("get post")
+        })
+        .catch((error)=>{
+            console.log("error")
+        })
+
+        // hàm async để khai báo một hàm bất nội bộ 
+        async function login() {
+            try{
+                // phải đợi cái hàm sau await xong mới chạy các hàm dưới
+                // nhờ bên thứ ba can thiệp, user trả về promise có trạng thái pending
+                const user = await login()
+                console.log("get user")
+
+                const post = await getpost(user.id)
+                console.log("get post")
+            }
+            catch(error){
+                console.log(error)
+            }
+        }
+
+        function naucom(callback){
+            console.log("Dang nau com")
+            callback()
+        }
+
+
+        //callback cua nấu cơm là ăn cơm => phải thực hiện Dang nau com rồi mới tới callback() là ăn cơm
+        naucom(
+            ()=>{
+                console.log("Ăn cơm")
+            }
+        )
+        // hoặc có thể
+        function ancom(){
+            console.log("ăn cơm")
+        }
+        naucom(ancom)
+
+        login(()=>{
+            console.log("Đăng nhập thành công")
+            getuser(()=>{
+                console.log("Lấy thông tin người dùng")
+                getcomment(()=>{
+                    console.log("Lấy bình luận")
+                })
+            })
+        })
+
+        promise
+       
+        const result = await  promise.all([
+            fetch("http://"),
+            fetch("http://"),
+            fetch("http://")
+        ])
+        const login = ()=>{
+            return new Promise((resolve, reject) =>{
+                if (resolve){
+                    resolve("login successed")
+                }else{
+                    reject("Login failed")
+                }
+            })
+        }
+
+    </script>
+     <!-- <div class = "loadmore">
+        <button>Load More</button>
+    </div> -->
+    <!-- <script>
+        const data = fetch("https://jsonplaceholder.typicode.com/todos/1")
+        console.log(data)
+ 
+        const result = await promise.all([
+            fetch("https://jsonplaceholder.typicode.com/todos/1"),
+            fetch("https://jsonplaceholder.typicode.com/todos/2"),
+            fetch("https://jsonplaceholder.typicode.com/todos/3")
+        ])
+
+        const login = ()=>{
+            return new Promise((resolve, reject)=>{
+                 if (resolve) {
+                    resolve("Đăng nhập thành công")
+                 }
+                    else{
+                        reject("Đăng nhập thất bại")
+                    }
+            })
+        }
+
+        const promise = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                resolve("Đã hoàn thành")
+            }, 1000)
+        })
+        promise
+        .then((data)=>{
+            console.log(data)
+        })
+        .catch((error)=>{
+            console.log(error)
+        })
+
+        login()
+        .then((user)=>{
+            console.log("get user")
+        })
+        .then((post)=>{
+            console.log("get post")
+        })
+        .catch((error)=>{
+            console.log(error)
+        })
+
+        async function login(){
+            try{
+                const user = await login()
+                console.log("get user")
+
+                const post = await getpost(user.id)
+                console.log("get post")
+
+            }
+            catch(error){
+                console.log(error)
+            }
+        }
+      
+
+
+
+        function naucom(callback){ 
+            console.log("Đang nấu cơm") 
+            callback() 
+        }
+        naucom(
+            ()=>{ console.log("Ăn cơm") }
+        )
+        function ancom(){
+            console.log("Ăn cơm")
+        }
+        naucom(ancom)
+
+        login(()=>{
+            console.log("Đăng nhập thành công")
+            getuser(()=>{
+                console.log("Lấy thông tin người dùng thành công")
+                getpost(()=>{
+                    console.log("Lấy bài viết thành công")
+                    getcomment(()=>{
+                        console.log("Lấy bình luận thành công")
+                })
+            })
+
+        console.log(1)
+        console.log(2)
+        setTimeout(()=>{
+            console.log("3")
+        }, 1000)
+        console.log(4)
+    </script> -->
+</body>
+</html>
