@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- thu vien animate -->
+     <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+        /* h1{
+            animation: bounce;
+            animation-duration: 2s;
+        } */
+         .wow{
+            color: #d3ff0d;
+            font-size: 30px; 
+         }
+         .box{
+             background-color: #194949;
+             width: 300px;
+             height: 300px;
+            display: flex;
+            align-items: center;
+            margin: 5px;
+         }
+    </style>
+</head>
+<body>
+    <!-- animate 
+        animate_infinite: lap lai lien tuc 
+    -->
+    <div class="animate__animated animate__bounce animate__infinite ">An animated element</div>
+    <div class="animate__animated animate__bounce animate__infinite">Example</div>
+    <!-- wow: làm cho animation lướt tới đâu chạy tới đó -->
+    <script src="./wow.min.js"></script>
+    <script>
+              new WOW().init();
+    </script>
+  
+ 
+    <div class="box">
+        <div class=" animate__animated wow animate__bounceOutDown">
+                Content to Reveal Here
+            </div>
+    </div>
+      
+    <div class="box">
+        <div class=" animate__animated wow animate__bounceOutDown">
+                Content to Reveal Here
+            </div>
+    </div>
+      
+    <div class="box">
+        <div class=" animate__animated wow animate__bounceOutDown">
+                Content to Reveal Here
+            </div>
+    </div>
+      <div class="box">
+        <div class=" animate__animated wow animate__bounceOutDown">
+                Content to Reveal Here
+            </div>
+    </div>
+      
+</body>
+</html>

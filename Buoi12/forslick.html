@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>My Now Amazing Webpage</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
+  <style>
+   
+    .your-class{
+        width: 900px;
+        margin: 0 auto;
+    }
+    .your-class div {
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-inner {
+        width: 100%;              
+        height: 150px;           
+        background-color: aquamarine;
+        
+        
+        margin: 5px 10px;          
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;       
+    }
+  </style>
+
+</head>
+  <body >
+
+ <div class="your-class">
+    <div><div class="box-inner">your content 1</div></div>
+    <div><div class="box-inner">your content 2</div></div>
+    <div><div class="box-inner">your content 3</div></div>
+    <div><div class="box-inner">your content 4</div></div>
+    <div><div class="box-inner">your content 5</div></div>
+    <div><div class="box-inner">your content 6</div></div>
+</div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+
+   <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+      });
+    });
+  </script>
+
+  </body>
+</html>
